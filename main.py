@@ -5,7 +5,6 @@ from details import details, suggestions
 print("\nPlease select the thing to copy")
 
 def completer(text, state):
-    print("completing")
     options = [x for x in suggestions if x.startswith(text)]
     if state < len(options):
         return options[state]
